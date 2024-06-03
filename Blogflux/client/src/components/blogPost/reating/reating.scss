@@ -1,0 +1,72 @@
+.ReatingContainer {
+  background-color: #eeeeee;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  .users {
+    display: flex;
+    align-items: center;
+    .ReatingAvatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid rgb(219, 218, 228);
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    .withoutReatingAvatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid rgb(219, 218, 228);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: "Noto Serif", serif;
+      font-weight: bold;
+      color: rgb(41, 41, 41);
+      background-color: rgb(235, 235, 235);
+      transition: 0.2s;
+      cursor: pointer;
+
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none; /* Standard syntax */
+      &:hover {
+        transform: scale(1.04);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    .nameAndTime{
+      margin-left: 8px;
+      text-align: left;
+      .ReatingAuthor{
+        font-family: "Noto Serif", serif;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.9995px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .ReatingTime {
+        color: #555555;
+        font-size: 13px;
+      }
+    }
+  }
+  .Reating {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+}

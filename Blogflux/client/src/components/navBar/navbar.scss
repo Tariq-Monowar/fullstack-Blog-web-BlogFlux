@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbarContainer {
+  // width: 100%;
+  // max-width: 1300px;
+  //   box-shadow: #32325d40 0 6px 12px -2px, #0000004d 0 3px 7px -3px;
+  // box-shadow: rgba(50, 50, 93, 0.2509803922) 2px 1px 5px 0px,
+  //   rgba(0, 0, 0, 0.3019607843) 0 3px 7px -3px;
+  box-shadow: rgb(50 50 93 / 16%) 2px 1px 3px 0px,
+    rgb(0 0 0 / 11%) 0 3px 7px -3px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+  .navbarContent {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    .app-logo {
+      font-family: "Dancing Script", cursive;
+      font-size: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none; 
+    }
+    .navItem {
+      font-family: "Noto Serif", serif;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      .nav-list {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0px 10px;
+      }
+      .createBlog {
+        margin-right: 15px;
+      }
+      .profileIconContainer {
+        margin-right: 10px;
+        .profileImage {
+          margin-top: 7px;
+          width: 39px;
+          height: 39px;
+          border-radius: 50%;
+          border: 2px solid rgb(204, 203, 203);
+          transition: 0.2s;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.04);
+          }
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+        .withoutImage {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          border: 2px solid rgb(204, 203, 203);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-family: "Noto Serif", serif;
+          font-weight: bold;
+          color: rgb(41, 41, 41);
+          background-color: rgb(235, 235, 235);
+          transition: 0.2s;
+          cursor: pointer;
+
+          -webkit-user-select: none; /* Safari */
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE 10+ */
+          user-select: none; /* Standard syntax */
+          &:hover {
+            transform: scale(1.04);
+          }
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+
+    .navItem .active {
+      text-decoration: underline;
+    }
+  }
+}
